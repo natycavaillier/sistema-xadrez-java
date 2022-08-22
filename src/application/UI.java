@@ -63,6 +63,10 @@ public class UI {
             System.out.println("Waiting player: " + ANSI_YELLOW + chessMatch.getCurrentPlayer() + ANSI_RESET);
         }
 
+        if (chessMatch.getCheck()) {
+            System.out.println("CHECK!");
+        }
+
     }
 
     public static void printBoard(ChessPiece[][] pieces) {
